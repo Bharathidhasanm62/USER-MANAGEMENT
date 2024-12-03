@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Login from "./components/Auth/Login";
+// import Signup from "./components/Auth/Signup";
+// import UserDashboard from "./components/User/UserDashboard";
+// import AdminDashboard from "./components/Admin/AdminDashboard";
+// import ProtectedRoute from "./components/ProtectedRoute";
+// import { AuthProvider } from "./components/AuthContext";
+// import { Header } from "./components/Shared/Header";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>User Management</div>
+    // <Router>
+    //   <AuthProvider>
+    //     <Routes>
+    //       <Route path="/" element={<Login />} />
+    //       <Route path="/login" element={<Login />} />
+    //       <Route path="/signup" element={<Signup />} />
+    //       <Route
+    //         path="/user-dashboard"
+    //         element={
+    //           <ProtectedRoute
+    //             component={UserDashboard}
+    //             allowedRoles={["user"]}
+    //           />
+    //         }
+    //       />
+    //       <Route
+    //         path="/admin-dashboard"
+    //         element={
+    //           <ProtectedRoute
+    //             component={AdminDashboard}
+    //             allowedRoles={["admin"]}
+    //           />
+    //         }
+    //       />
+    //     </Routes>
+    //   </AuthProvider>
+    // </Router>
   );
-}
+};
 
 export default App;
