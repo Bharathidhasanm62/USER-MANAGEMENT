@@ -6,11 +6,11 @@ import React from "react";
 // import AdminDashboard from "./components/Admin/AdminDashboard";
 // import ProtectedRoute from "./components/ProtectedRoute";
 // import { AuthProvider } from "./components/AuthContext";
-// import { Header } from "./components/Shared/Header";
+// import { Toaster } from "react-hot-toast";
 
 const App: React.FC = () => {
   return (
-    <div>User Management</div>
+    <div>Tets</div>
     // <Router>
     //   <AuthProvider>
     //     <Routes>
@@ -36,6 +36,8 @@ const App: React.FC = () => {
     //         }
     //       />
     //     </Routes>
+    //     <Toaster />
+
     //   </AuthProvider>
     // </Router>
   );
