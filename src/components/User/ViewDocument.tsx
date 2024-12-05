@@ -27,7 +27,9 @@ const ViewDocument: React.FC<ViewDocumentProps> = ({ documents }) => {
         <div className="text-center text-gray-600">
           <FaFileAlt className="text-4xl mb-4 text-gray-500" />
           <p className="text-xl">No documents available</p>
-          <p className="text-sm text-gray-500 mt-2">Please upload a document to get started.</p>
+          <p className="text-sm text-gray-500 mt-2">
+            Please upload a document to get started.
+          </p>
         </div>
       </div>
     );
@@ -41,9 +43,7 @@ const ViewDocument: React.FC<ViewDocumentProps> = ({ documents }) => {
           className="border border-gray-200 rounded-lg shadow-md bg-white p-4"
         >
           <h3 className="text-lg font-semibold text-blue-600 hover:underline">
-            <a rel="noopener noreferrer">
-              {doc.fileName}
-            </a>
+            <a rel="noopener noreferrer">{doc.fileName}</a>
           </h3>
           <p className="text-sm text-gray-600 mt-2">
             Uploaded by: <span className="font-medium">{doc.uploadedBy}</span>
@@ -53,7 +53,7 @@ const ViewDocument: React.FC<ViewDocumentProps> = ({ documents }) => {
             {doc.recipients.map((recipient, idx) => (
               <span
                 key={idx}
-                className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full mr-2"
+                className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full m-1"
               >
                 {recipient?.name}
               </span>

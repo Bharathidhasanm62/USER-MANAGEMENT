@@ -77,7 +77,7 @@ const UsersTab: React.FC<UsersTabProps> = ({
                     </div>
                     <div className="flex items-center mb-4">
                       <MdEmail className="mr-2 text-gray-600" />
-                      <p className="text-gray-600">{user.email}</p>
+                      <p className="text-gray-600 truncate">{user.email}</p>
                     </div>
                     <div className="flex items-center mb-4">
                       <FaPhoneAlt className="mr-2 text-gray-600" />
